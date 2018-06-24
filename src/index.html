@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Seespee - Content Security Policy Generator</title>
+</head>
+<body>
+
+  <main>
+    <h1>Seepsee</h1>
+    <p>A content security policy generator</p>
+
+    <form method="get" action="/.netlify/functions/seespee" id="seespee-form">
+      <label>
+        <p>Type in a URL</p>
+        <input type="text" name="url">
+      </label>
+      <button type="submit">Generate Policy</button>
+    </form>
+
+    <section id="seespee-output">
+
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="https://github.com/munter/seespee.netlify.com">Website repository</a></li>
+        <li><a href="https://github.com/papandreou/seespee">Seespee repository</a></li>
+        <li><a href="https://www.npmjs.com/package/seespee">Seespee on npm</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="index.js"></script>
+
+</body>
+</html>

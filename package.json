@@ -4,7 +4,10 @@
   "description": "Website for seespee",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "run-p static lambda",
+    "static": "livestyle --root src --dead --proxy http://localhost:9000/ --map /.netlify/functions=/",
+    "lambda": "netlify-lambda serve functions",
+    "build": "buildProduction --outroot dist src/index.html && netlify-lambda build functions"
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,7 @@
   },
   "homepage": "https://github.com/Munter/seespee.netlify.com#readme",
   "devDependencies": {
+    "assetgraph-builder": "^6.3.4",
     "netlify-lambda": "^0.4.0"
   },
   "dependencies": {
