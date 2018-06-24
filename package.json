@@ -1,0 +1,31 @@
+{
+  "name": "seespee.netlify.com",
+  "version": "1.0.0",
+  "description": "Website for seespee",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Munter/seespee.netlify.com.git"
+  },
+  "keywords": [
+    "csp",
+    "content",
+    "security",
+    "policy"
+  ],
+  "author": "Peter Müller <munter@fumle.dk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Munter/seespee.netlify.com/issues"
+  },
+  "homepage": "https://github.com/Munter/seespee.netlify.com#readme",
+  "devDependencies": {
+    "netlify-lambda": "^0.4.0"
+  },
+  "dependencies": {
+    "seespee": "^2.0.2"
+  }
+}
