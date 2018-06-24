@@ -1,5 +1,7 @@
 'use strict';
 
+require('./fakeReaddirSyncForLambda');
+
 const seespee = require('seespee');
 const { URL } = require('url');
 
