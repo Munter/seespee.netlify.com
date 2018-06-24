@@ -30,7 +30,6 @@
     "netlify-lambda": "^0.4.0"
   },
   "dependencies": {
-    "seespee": "^2.0.2",
-    "sinon": "^6.0.0"
+    "seespee": "^2.0.2"
   }
 }
